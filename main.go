@@ -84,14 +84,14 @@ func main() {
 		panic(err)
 	}
 
-	var target_slice []Target
-	for _, line := range lines {
+	target_slice := make([]Target, len(lines))
+	for i, line := range lines {
 		elements := strings.Fields(line)
 		if len(elements) != 3 {
 			fmt.Println("configration file is invalid\n")
 			os.Exit(0)
 		}
-		target_slice = append(target_slice, Target{Host: elements[0], Protocol: elements[1], IpAddress: elements[2]})
+		target_slice[i] = Target{Host: elements[0], Protocol: elements[1], IpAddress: elements[2]}
 	}
 
 	err = termbox.Init()
