@@ -75,7 +75,7 @@ func redraw_all(target_slice []Target, hl_line int) {
 func main() {
 	args := os.Args
 	if len(args) != 2 {
-		fmt.Println("Exec like..\n\t./step-go your.conf")
+		fmt.Println("Exec like..\n\t./fumu your.conf")
 		os.Exit(0)
 	}
 	fp := os.Args[1]
