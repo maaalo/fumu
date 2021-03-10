@@ -6,7 +6,7 @@ fumu is graphical remote host selector  for login.
 ![screen_shot1](./img/screen_shot1.png)
 
 ## Installation
-    % go get -u github.com/maaalo/fumu
+    % go get -u github.com/malohithon/fumu
 
 ## Running
 Configuration file is here.
